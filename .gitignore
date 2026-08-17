@@ -9,9 +9,28 @@ wheels/
 # macOS metadata
 .DS_Store
 
+# Office lock files
+~$*.xlsx
+
 # Virtual environments
 .venv
 
 # Rebuildable workflow scratch directories
 work/
 tmp/
+
+# Remote training data and generated experiment artifacts
+/data/
+/datasets/
+project/**/checkpoints/
+project/**/outputs/
+project/**/runs/
+project/**/wandb/
+repos/**/checkpoints/
+repos/**/outputs/
+repos/**/runs/
+repos/**/wandb/
+*.ckpt
+*.pth
+*.pt
+*.safetensors

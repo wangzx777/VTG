@@ -105,32 +105,6 @@ async function main() {
     assert.equal(refreshGate.action, "continue_triage");
     assert.equal(refreshGate.reason, "explicit_refresh");
 
-    const source = path.join(root, "literature", "sources", "CVPR 2026", "2026-test-paper.pdf");
-    await fs.mkdir(path.dirname(source), { recursive: true });
-    await fs.writeFile(source, "fixture");
-    const cache = path.join(literature, "extracted", "2026-test-paper");
-    await fs.mkdir(cache, { recursive: true });
-    const paperMd = path.join(cache, "paper.md");
-    await fs.writeFile(paperMd, "# Test Paper\n\nMethod and evidence.\n");
-    const sourceHash = crypto.createHash("sha256").update("fixture").digest("hex");
-    const paperMdHash = crypto.createHash("sha256").update("# Test Paper\n\nMethod and evidence.\n").digest("hex");
-    await fs.writeFile(path.join(cache, "source.sha256"), `${sourceHash}\n`);
-    await fs.writeFile(path.join(cache, "extraction.json"), JSON.stringify({
-      schema_version: "1.0", paper_id: "2026-test-paper",
-      source_sha256: sourceHash, paper_md_sha256: paperMdHash,
-      status: "pass", errors: [], warnings: [],
-    }));
-    const invalidNote = path.join(root, "invalid-note.md");
-    await fs.writeFile(invalidNote, "---\npaper_id: 2026-test-paper\n---\ninvalid\n");
-    await run("update_read_status.mjs", [
-      "--workbook", workbook, "--paper-id", "2026-test-paper", "--note", invalidNote,
-      "--status", "Read", "--apply",
-    ], 2, sharedToolsDir);
-    const afterInvalidNote = JSON.parse((await run(
-      "inspect_papers_xlsx.mjs", ["--workbook", workbook, "--paper-id", "2026-test-paper"], 0, sharedToolsDir,
-    )).stdout);
-    assert.equal(afterInvalidNote.record["Read Status"], "Triaged");
-
     const queueAfterTriage = JSON.parse((await run(
       "list_untriaged_papers.mjs", ["--workbook", workbook], 0, sharedToolsDir,
     )).stdout);

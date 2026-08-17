@@ -206,5 +206,5 @@ Read Status. Otherwise report:
 - whether workbook apply completed;
 - next action: deep read, scan only, code check, or resolve uncertainty.
 
-Do not create `notes/`, `code-maps/`, topic syntheses, repository reviews, or
-reproduction claims in this skill.
+Do not create translations, reading notes, topic syntheses, repository reviews,
+or reproduction claims in this skill.

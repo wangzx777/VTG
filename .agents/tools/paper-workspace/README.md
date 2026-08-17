@@ -1,7 +1,8 @@
 # Paper Workspace Tools
 
-Deterministic shared utilities used by `paper-triage` and `paper-read`. This
-directory intentionally has no `SKILL.md`, so it is never an automatic trigger.
+Deterministic shared utilities used by `paper-triage` and by the optional
+extraction path in `paper-read`. This directory intentionally has no `SKILL.md`,
+so it is never an automatic trigger.
 
 Stable cache interfaces:
 
@@ -15,8 +16,6 @@ Additional workflow gates:
 
 - `triage_gate.mjs`: Excel-only triage idempotency decision.
 - `list_untriaged_papers.mjs`: dynamic `Not Triaged` queue.
-- `update_read_status.mjs`: validate a paper-read note, atomically advance one
-  `Read Status` cell, reopen, and verify all other cells are unchanged.
 
 The extraction cache contract remains:
 
