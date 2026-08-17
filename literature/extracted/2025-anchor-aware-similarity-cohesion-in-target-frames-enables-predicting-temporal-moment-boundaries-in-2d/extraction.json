@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2025-anchor-aware-similarity-cohesion-in-target-frames-enables-predicting-temporal-moment-boundaries-in-2d",
+  "source_path": "literature/sources/CVPR 2025/2025-anchor-aware-similarity-cohesion-in-target-frames-enables-predicting-temporal-moment-boundaries-in-2d.pdf",
+  "source_sha256": "2f4f7d949d63bd8e1e3049d00df8107393f04d1ed4621625cebfcedab5e0169c",
+  "paper_md_sha256": "bbc78ef2cf56db3754ac83e1366f584e4b4cdafa5f448579a85fb2802ed9c947",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "hybrid-engine",
+    "mineru_device": "auto",
+    "huggingface_cache": "/Users/macchiato/.cache/huggingface",
+    "huggingface_cache_source": "HF_HOME"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/CVPR 2025/2025-anchor-aware-similarity-cohesion-in-target-frames-enables-predicting-temporal-moment-boundaries-in-2d.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2025-anchor-aware-similarity-cohesion-in-target-frames-enables-predicting-temporal-moment-boundaries-in-2d.extract-ty609mh9/backend-output",
+    "-b",
+    "hybrid-engine",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-13T02:46:42.992331+00:00",
+  "finished_at": "2026-08-13T02:49:54.551513+00:00",
+  "duration_seconds": 191.559,
+  "page_count": null,
+  "status": "pass",
+  "errors": [],
+  "warnings": [],
+  "quality_signals": {
+    "characters": 47731,
+    "nonspace_characters": 41239,
+    "characters_per_page": null,
+    "headings": 16,
+    "formula_markers": 143,
+    "markdown_table_rows": 0,
+    "html_tables": 9,
+    "referenced_assets": 9,
+    "asset_files": 33,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  }
+}

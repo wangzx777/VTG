@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2026-timelens-rethinking-video-temporal-grounding-with-multimodal-llms",
+  "source_path": "literature/sources/CVPR 2026/2026-timelens-rethinking-video-temporal-grounding-with-multimodal-llms.pdf",
+  "source_sha256": "e570a2588ac25c4e2760be95cdfbdcdbbb916d1ee04cdda284c9edea05ee7fd8",
+  "paper_md_sha256": "0a2dbd18ac56f1dd141e6ff156291845601cb897a3bf89dc1fd69bb6b2196b54",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "pipeline",
+    "mineru_device": "cpu"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/CVPR 2026/2026-timelens-rethinking-video-temporal-grounding-with-multimodal-llms.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2026-timelens-rethinking-video-temporal-grounding-with-multimodal-llms.extract-ya4v3ek0/backend-output",
+    "-b",
+    "pipeline",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-12T11:33:26.095531+00:00",
+  "finished_at": "2026-08-12T11:33:55.765745+00:00",
+  "duration_seconds": 29.67,
+  "page_count": 11,
+  "status": "pass",
+  "errors": [],
+  "warnings": [],
+  "quality_signals": {
+    "characters": 56934,
+    "nonspace_characters": 49589,
+    "characters_per_page": 4508.09,
+    "headings": 14,
+    "formula_markers": 2,
+    "markdown_table_rows": 0,
+    "html_tables": 3,
+    "referenced_assets": 14,
+    "asset_files": 17,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  },
+  "runtime_compatibility": [
+    "MinerU MLX/Metal preflight failed; selected the pipeline engine instead of hybrid-engine. Preflight detail: libc++abi: terminating due to uncaught exception of type NSException",
+    "Forced MinerU pipeline models to CPU because MLX/Metal is unavailable in this runtime.",
+    "Enabled single-process MinerU PDF rendering with a run-local SC_SEM_NSEMS_MAX fallback because the macOS sandbox denied that sysconf query.",
+    "Ignored the installed MLX package inside the MinerU child process because its Metal preflight failed or CPU was requested."
+  ],
+  "previous_cache_rejection_reasons": []
+}

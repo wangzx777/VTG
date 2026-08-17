@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2025-decafnet-delegate-and-conquer-for-efficient-temporal-grounding-in-long-videos",
+  "source_path": "literature/sources/CVPR 2025/2025-decafnet-delegate-and-conquer-for-efficient-temporal-grounding-in-long-videos.pdf",
+  "source_sha256": "e4ea6b51ee51878962132d40f253437998bbe99e9af2b016fdcc846979d8ff39",
+  "paper_md_sha256": "deef51ed5eedb9dc163f1d6e8b1eb9aed2e410e488c0a54f1ee866b5ff7c3c84",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "hybrid-engine",
+    "mineru_device": "auto",
+    "huggingface_cache": "/Users/macchiato/.cache/huggingface",
+    "huggingface_cache_source": "HF_HOME"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/CVPR 2025/2025-decafnet-delegate-and-conquer-for-efficient-temporal-grounding-in-long-videos.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2025-decafnet-delegate-and-conquer-for-efficient-temporal-grounding-in-long-videos.extract-brdk2agk/backend-output",
+    "-b",
+    "hybrid-engine",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-13T02:49:55.680310+00:00",
+  "finished_at": "2026-08-13T02:51:03.650375+00:00",
+  "duration_seconds": 67.97,
+  "page_count": null,
+  "status": "pass",
+  "errors": [],
+  "warnings": [],
+  "quality_signals": {
+    "characters": 59472,
+    "nonspace_characters": 50858,
+    "characters_per_page": null,
+    "headings": 18,
+    "formula_markers": 136,
+    "markdown_table_rows": 0,
+    "html_tables": 11,
+    "referenced_assets": 3,
+    "asset_files": 18,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  }
+}

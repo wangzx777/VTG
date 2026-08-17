@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2025-kda-knowledge-diffusion-alignment-with-enhanced-context-for-video-temporal-grounding",
+  "source_path": "literature/sources/ICCV 2025/2025-kda-knowledge-diffusion-alignment-with-enhanced-context-for-video-temporal-grounding.pdf",
+  "source_sha256": "187f89c7233096bae28f5cf95d22d91cbc6c3be82b18239d6ccdbc83b71e3ae0",
+  "paper_md_sha256": "cadc17a125de13c46ef79bf0c066c97bfc9cf903bd54e069afe2715cbce47300",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "hybrid-engine",
+    "mineru_device": "auto",
+    "huggingface_cache": "/Users/macchiato/.cache/huggingface",
+    "huggingface_cache_source": "HF_HOME"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/ICCV 2025/2025-kda-knowledge-diffusion-alignment-with-enhanced-context-for-video-temporal-grounding.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2025-kda-knowledge-diffusion-alignment-with-enhanced-context-for-video-temporal-grounding.extract-c_fg60hn/backend-output",
+    "-b",
+    "hybrid-engine",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-12T14:25:47.745812+00:00",
+  "finished_at": "2026-08-12T14:27:05.115006+00:00",
+  "duration_seconds": 77.369,
+  "page_count": 10,
+  "status": "warning",
+  "errors": [],
+  "warnings": [
+    "Targeted PDF comparison found minor formula-context loss: the arrows in gamma_1 -> 0 and gamma_T -> 1 were omitted from the paragraph before Eq. (3), and the discard marker before Eq. (10) is garbled. Use the source PDF for these expressions."
+  ],
+  "quality_signals": {
+    "characters": 50327,
+    "nonspace_characters": 43264,
+    "characters_per_page": 4326.4,
+    "headings": 23,
+    "formula_markers": 67,
+    "markdown_table_rows": 0,
+    "html_tables": 7,
+    "referenced_assets": 6,
+    "asset_files": 28,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  },
+  "runtime_compatibility": [],
+  "previous_cache_rejection_reasons": [
+    "Required file not found: /Users/macchiato/VTG/literature/extracted/2025-kda-knowledge-diffusion-alignment-with-enhanced-context-for-video-temporal-grounding/extraction.json"
+  ]
+}

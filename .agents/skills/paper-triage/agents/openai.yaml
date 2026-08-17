@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Triage"
+  short_description: "Cache PDFs and safely triage papers into the research workbook"
+  default_prompt: "Use $paper-triage to cache and triage a synchronized VTG paper into papers.xlsx."

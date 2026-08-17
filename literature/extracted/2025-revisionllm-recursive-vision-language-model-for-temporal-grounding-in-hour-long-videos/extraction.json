@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2025-revisionllm-recursive-vision-language-model-for-temporal-grounding-in-hour-long-videos",
+  "source_path": "literature/sources/CVPR 2025/2025-revisionllm-recursive-vision-language-model-for-temporal-grounding-in-hour-long-videos.pdf",
+  "source_sha256": "4f8ccd5a345a7877120d27f680ca66dc4d4a230bbb5f42d3c54b4a9153c1e270",
+  "paper_md_sha256": "d1cd97243e3d636fc74519a78e695d7538821e79c6136a5a85204f5c25c6e802",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "hybrid-engine",
+    "mineru_device": "auto",
+    "huggingface_cache": "/Users/macchiato/.cache/huggingface",
+    "huggingface_cache_source": "HF_HOME"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/CVPR 2025/2025-revisionllm-recursive-vision-language-model-for-temporal-grounding-in-hour-long-videos.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2025-revisionllm-recursive-vision-language-model-for-temporal-grounding-in-hour-long-videos.extract-9vr7x155/backend-output",
+    "-b",
+    "hybrid-engine",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-13T02:53:38.197158+00:00",
+  "finished_at": "2026-08-13T02:54:25.117905+00:00",
+  "duration_seconds": 46.921,
+  "page_count": null,
+  "status": "pass",
+  "errors": [],
+  "warnings": [],
+  "quality_signals": {
+    "characters": 55812,
+    "nonspace_characters": 47666,
+    "characters_per_page": null,
+    "headings": 19,
+    "formula_markers": 68,
+    "markdown_table_rows": 0,
+    "html_tables": 5,
+    "referenced_assets": 7,
+    "asset_files": 17,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  }
+}

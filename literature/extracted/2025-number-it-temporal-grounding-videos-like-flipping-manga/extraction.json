@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2025-number-it-temporal-grounding-videos-like-flipping-manga",
+  "source_path": "literature/sources/CVPR 2025/2025-number-it-temporal-grounding-videos-like-flipping-manga.pdf",
+  "source_sha256": "5aff218de3aaddd2a4d620c57b883283c6271b8cc97b81d7ae511fe060a82c2d",
+  "paper_md_sha256": "8bfb00837cf9d487e448d071e84ddd1760b6490e055e48de48ee5e9ef9e55e5d",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "hybrid-engine",
+    "mineru_device": "auto",
+    "huggingface_cache": "/Users/macchiato/.cache/huggingface",
+    "huggingface_cache_source": "HF_HOME"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/CVPR 2025/2025-number-it-temporal-grounding-videos-like-flipping-manga.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2025-number-it-temporal-grounding-videos-like-flipping-manga.extract-pxtmdb1n/backend-output",
+    "-b",
+    "hybrid-engine",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-13T02:52:41.817406+00:00",
+  "finished_at": "2026-08-13T02:53:37.040410+00:00",
+  "duration_seconds": 55.223,
+  "page_count": null,
+  "status": "pass",
+  "errors": [],
+  "warnings": [],
+  "quality_signals": {
+    "characters": 57391,
+    "nonspace_characters": 49774,
+    "characters_per_page": null,
+    "headings": 20,
+    "formula_markers": 4,
+    "markdown_table_rows": 0,
+    "html_tables": 4,
+    "referenced_assets": 8,
+    "asset_files": 13,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  }
+}

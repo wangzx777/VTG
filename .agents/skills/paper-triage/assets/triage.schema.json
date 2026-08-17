@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vtg/schemas/paper-triage-1.0.json",
+  "title": "VTG paper triage record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "paper_id", "source_sha256", "record", "evidence", "checks", "uncertainties"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "paper_id": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "source_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Paper ID", "Year", "Venue", "Title", "Task", "Method Family", "Focus", "Priority", "Priority Reason", "Read Status", "Base Model", "Core Idea", "Training", "Datasets", "Metrics", "Code", "Repo", "Reproduce Status", "Zotero Key", "Remarks"],
+      "properties": {
+        "Paper ID": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "Year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "Venue": { "$ref": "#/$defs/nonempty" },
+        "Title": { "$ref": "#/$defs/nonempty" },
+        "Task": { "$ref": "#/$defs/nonempty" },
+        "Method Family": { "$ref": "#/$defs/nonempty" },
+        "Focus": { "$ref": "#/$defs/nonempty" },
+        "Priority": { "enum": ["Core", "Important", "Scan"] },
+        "Priority Reason": { "$ref": "#/$defs/nonempty" },
+        "Read Status": { "enum": ["Not Triaged", "Triaged", "Read", "Deep Read"] },
+        "Base Model": { "$ref": "#/$defs/nonempty" },
+        "Core Idea": { "$ref": "#/$defs/nonempty" },
+        "Training": { "$ref": "#/$defs/nonempty" },
+        "Datasets": { "$ref": "#/$defs/nonempty" },
+        "Metrics": { "$ref": "#/$defs/nonempty" },
+        "Code": { "enum": ["Official", "Unofficial", "None", "Not Checked"] },
+        "Repo": { "anyOf": [{ "const": "N/A" }, { "type": "string", "format": "uri", "pattern": "^https?://" }] },
+        "Reproduce Status": { "enum": ["N/A", "Not Started", "Env Ready", "Inference", "Evaluation", "Training", "Reproduced", "Failed"] },
+        "Zotero Key": { "$ref": "#/$defs/nonempty" },
+        "Remarks": { "$ref": "#/$defs/nonempty" }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/evidenceItem" }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["paper_read", "official_code_source_checked"],
+      "properties": {
+        "paper_read": { "const": true },
+        "official_code_source_checked": { "type": "boolean" }
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["field", "reason", "action"],
+        "properties": {
+          "field": { "type": "string" },
+          "reason": { "$ref": "#/$defs/nonempty" },
+          "action": { "$ref": "#/$defs/nonempty" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonempty": { "type": "string", "minLength": 1 },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "locator", "quote"],
+      "properties": {
+        "source": { "enum": ["paper", "pdf", "xlsx", "zotero", "official-page", "repo", "inference"] },
+        "locator": { "$ref": "#/$defs/nonempty" },
+        "quote": { "type": "string", "minLength": 1, "maxLength": 500 }
+      }
+    }
+  }
+}

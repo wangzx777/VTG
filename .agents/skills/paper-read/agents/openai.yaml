@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Read"
+  short_description: "Translate one paper and create an AI note"
+  default_prompt: "Use $paper-read to translate one paper into Chinese and create its AI reading note."

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "2025-towards-efficient-and-robust-moment-retrieval-system-a-unified-framework-for-multi-granularity-models-and-temporal-reranking",
+  "source_path": "literature/sources/CVPR 2025/2025-towards-efficient-and-robust-moment-retrieval-system-a-unified-framework-for-multi-granularity-models-and-temporal-reranking.pdf",
+  "source_sha256": "33f0ec4b294a7c372a05f1bfdc89388763dc7ebec103917148838d66247dffac",
+  "paper_md_sha256": "54b2638d8ea00cd5e90cdb18ab6e950e30c8b33b89c4e7065043fa4ddd7c56da",
+  "backend": "mineru",
+  "backend_version": "mineru, version 3.4.4",
+  "backend_options": {
+    "mineru_engine": "hybrid-engine",
+    "mineru_device": "auto",
+    "huggingface_cache": "/Users/macchiato/.cache/huggingface",
+    "huggingface_cache_source": "HF_HOME"
+  },
+  "ocr_mode": "auto",
+  "command": [
+    "mineru",
+    "-p",
+    "/Users/macchiato/VTG/literature/sources/CVPR 2025/2025-towards-efficient-and-robust-moment-retrieval-system-a-unified-framework-for-multi-granularity-models-and-temporal-reranking.pdf",
+    "-o",
+    "/Users/macchiato/VTG/literature/extracted/.2025-towards-efficient-and-robust-moment-retrieval-system-a-unified-framework-for-multi-granularity-models-and-temporal-reranking.extract-wjfzgls1/backend-output",
+    "-b",
+    "hybrid-engine",
+    "-m",
+    "auto",
+    "-f",
+    "true",
+    "-t",
+    "true"
+  ],
+  "started_at": "2026-08-13T02:54:26.259004+00:00",
+  "finished_at": "2026-08-13T02:55:06.240756+00:00",
+  "duration_seconds": 39.982,
+  "page_count": null,
+  "status": "pass",
+  "errors": [],
+  "warnings": [],
+  "quality_signals": {
+    "characters": 47826,
+    "nonspace_characters": 40601,
+    "characters_per_page": null,
+    "headings": 25,
+    "formula_markers": 23,
+    "markdown_table_rows": 0,
+    "html_tables": 0,
+    "referenced_assets": 9,
+    "asset_files": 10,
+    "missing_assets": [],
+    "replacement_character_ratio": 0.0,
+    "control_character_ratio": 0.0
+  }
+}
