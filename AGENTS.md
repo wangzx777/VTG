@@ -54,9 +54,9 @@ Research workspace for Video Temporal Grounding / Video Temporal Retrieval.
 - Before editing on either host, require a clean worktree and run
   `git pull --rebase origin main`. After a verified task, commit the intended paths
   and push `main` so the other host can pull them.
-- The 4090 host normally changes only `project/`, `repos/`, and its weekly log.
-  It still pulls the complete repository before work so that current paper caches,
-  notes, and skills are available locally.
+- The 4090 host normally changes only `project/` and `repos/`. It still pulls the
+  complete repository before work so that current paper caches, notes, and skills
+  are available locally.
 - Add official/reference repositories under `repos/` as Git submodules when
   practical. Push changes inside a submodule to a writable upstream or fork first,
   then commit the updated submodule revision in this repository.
@@ -65,6 +65,9 @@ Research workspace for Video Temporal Grounding / Video Temporal Retrieval.
 
 - After every task that creates, modifies, moves, or deletes files inside this
   workspace, append one concise entry to `Log/<ISO-year>-W<ISO-week>.md`.
+- When Codex operates the 4090 host remotely, record the task in the Mac checkout
+  at `/Users/macchiato/VTG/Log/`; do not modify the remote checkout only to add a
+  log entry.
 - Use the Asia/Shanghai local timestamp format `YYYY-MM-DD HH:mm:ss CST`. ISO
   weeks run from Monday through Sunday; for example, `Log/2026-W34.md`.
 - Record the user task, affected workspace-relative paths, and a brief statement
