@@ -11,7 +11,9 @@ Research workspace for Video Temporal Grounding / Video Temporal Retrieval.
 - `literature/extracted/`: text extracted from papers for efficient AI reading
 - `literature/papers.xlsx`: paper index and cross-paper summary
 - `repos/`: official/reference implementations
-- `project/`: user-owned research code
+- `repos/reproductions/`: reproduction configs, launch scripts, concise records,
+  and Git-ignored runtime outputs
+- `project/`: user-owned research code, reserved for future original development
 - `.agents/skills/`: reusable research workflows
 
 ## Research Assets
@@ -31,7 +33,9 @@ Research workspace for Video Temporal Grounding / Video Temporal Retrieval.
 - Prefer `literature/extracted/` when detailed paper text is needed.
 - Use `literature/sources/` to verify figures, tables, equations, ambiguous extraction, or original claims.
 - Verify implementation details directly against the pinned repository revision in
-  `repos/`; record user-owned implementation work in `project/`.
+  `repos/`; keep reproduction-specific configs, scripts, records, and outputs in
+  `repos/reproductions/`; record original user-owned implementation work in
+  `project/`.
 
 ## Working Rules
 
@@ -40,23 +44,28 @@ Research workspace for Video Temporal Grounding / Video Temporal Retrieval.
 - Keep `papers.xlsx` concise; current translations and reading notes belong in
   the venue-local `translations/` and `notes/` directories.
 - Treat `repos/` as read-only unless explicitly asked to modify it.
-- Only modify `project/` for user-owned research implementation or experiments.
+- Store reproduction orchestration and results under `repos/reproductions/`; keep
+  small reusable files in Git and place large runtime artifacts under each
+  project's `runs/` directory, which is ignored by Git.
+- Only modify `project/` for original user-owned research implementation; do not
+  use it for third-party reproduction outputs.
 - Preserve the workspace structure unless the task explicitly requires a change.
 
 ## Git Synchronization
 
 - `origin/main` stores the complete reusable workspace: `.agents/`, `literature/`,
-  `project/`, `repos/`, and `Log/`. Runtime environments, datasets, checkpoints,
-  and experiment outputs are excluded by `.gitignore`.
+  `project/`, `repos/`, and `Log/`. Runtime environments,
+  datasets, checkpoints, and experiment outputs are excluded by `.gitignore`.
 - Both the Mac and the 4090 host use a complete checkout. Git pulls commits, not
   selected directories; do not use folder-only synchronization for `project/` or
   `repos/`.
 - Before editing on either host, require a clean worktree and run
   `git pull --rebase origin main`. After a verified task, commit the intended paths
   and push `main` so the other host can pull them.
-- The 4090 host normally changes only `project/` and `repos/`. It still pulls the
-  complete repository before work so that current paper caches, notes, and skills
-  are available locally.
+- The 4090 host normally writes reproduction launch files and runtime results under
+  `repos/reproductions/`; `repos/` remains the source-code reference and `project/`
+  remains reserved for original user code. It still pulls the complete repository
+  before work so that current paper caches, notes, and skills are available locally.
 - Add official/reference repositories under `repos/` as Git submodules when
   practical. Push changes inside a submodule to a writable upstream or fork first,
   then commit the updated submodule revision in this repository.

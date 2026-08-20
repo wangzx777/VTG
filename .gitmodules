@@ -1,0 +1,12 @@
+[submodule "repos/Sim-DETR"]
+	path = repos/Sim-DETR
+	url = https://github.com/SooLab/Sim-DETR.git
+[submodule "repos/FlashVTG"]
+	path = repos/FlashVTG
+	url = https://github.com/Zhuo-Cao/FlashVTG.git
+[submodule "repos/CausalVTG"]
+	path = repos/CausalVTG
+	url = https://github.com/MxLearner/CausalVTG.git
+[submodule "repos/HieraMamba"]
+	path = repos/HieraMamba
+	url = https://github.com/jbistanbul/hieramamba.git

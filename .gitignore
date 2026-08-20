@@ -22,6 +22,8 @@ tmp/
 # Remote training data and generated experiment artifacts
 /data/
 /datasets/
+repo/reproductions/*/runs/*/**
+!repo/reproductions/*/runs/*/.gitkeep
 project/**/checkpoints/
 project/**/outputs/
 project/**/runs/
@@ -34,3 +36,6 @@ repos/**/wandb/
 *.pth
 *.pt
 *.safetensors
+
+repos/reproductions/*/runs/*/**
+!repos/reproductions/*/runs/*/.gitkeep
